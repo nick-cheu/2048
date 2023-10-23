@@ -36,7 +36,7 @@ void draw() {
   //creates background color and loads fonts  
   background(255, 242, 204);
   font1 = loadFont("Verdana-Bold-48.vlw");
-  font2 = loadFont("SansSerif-48.vlw");
+  font2 = loadFont("Sana-48.vlw");
 
   //welcome text on start screen
   textFont(font2);
@@ -95,9 +95,9 @@ void draw() {
     text("Time:" + ((timeM - startTimeM) - resetTimeM), textX2 + 300, 52.5);
   }
   if ((timeS - startTimeS - resetTimeS) % 60 < 10) {
-    text(":0" + (timeS - startTimeS - resetTimeS) % 60, textX2 + 440, 52.5);
+    text(":0" + (timeS - startTimeS - resetTimeS) % 60, textX2 + 415, 52.5);
   } else {
-    text(":" + (timeS - startTimeS - resetTimeS) % 60, textX2 + 440, 52.5);
+    text(":" + (timeS - startTimeS - resetTimeS) % 60, textX2 + 415, 52.5);
   }
 
   //welcome screen
